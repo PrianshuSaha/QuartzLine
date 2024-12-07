@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <title>About us</title>
+</head>
+<body>
+   
+        <div id="nav">
+            <div class="navrap">
+                <!--Logo -->
+                <div class="logo">
+                    <a href="home.html"><img src="images/qu-removebg-preview.png" alt="Fossil"></a>
+                </div>
+           
+                <!-- Navigation  -->
+                <div class="menu">
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html" class="active">Our Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                    <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+
+
+       <!------About us---->
+       <div class="about-section">
+        <div class="about-text">
+            <h1>About QuartzLine</h1>
+            <p>Welcome to QuartzLine, where precision meets elegance. At QuartzLine, we craft exceptional timepieces that 
+                combine cutting-edge technology with timeless design. Our watches are more than just instruments to tell time—they a
+                re a statement of sophistication and individuality. From sleek minimalist designs to bold statement pieces, our collection 
+                caters to every style and occasion, ensuring that each watch complements your unique personality.
+            </p>
+            <br>
+            <p>
+                We are committed to delivering unmatched quality, innovation, and customer satisfaction. Every QuartzLine watch is 
+                crafted with premium materials and meticulous attention to detail. Experience the perfect blend of functionality and 
+                artistry with QuartzLine—time, redefined.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="./images/account2.jpg" alt="Fashion Image">
+        </div>
+    </div>
+
+
+
+     <!--Testimonials-->
+
+     <div class="testimonial">
+        <h2>Our Product Core</h2>
+        <div class="small-container">
+            <div class="row">
+                <div class="testimonial-box">
+                    <i class="fa fa-lightbulb fa-3x"></i>
+                    <h4>Innovation</h4>
+                    <p>
+                        Personalize, try, and customize watches with AR and eco-friendly options online
+                    </p>
+                </div>
+    
+                <div class="testimonial-box">
+                    <i class="fa fa-users fa-3x"></i>
+                    <h4>Customer First</h4>
+                    <p>
+                        At QuartzLine, we prioritize our customers by offering timeless quality, innovation,
+                        and personalized experiences.
+                    </p>
+                    </div>
+    
+                <div class="testimonial-box">
+                    <i class="fa fa-shield-alt fa-3x"></i>
+                    <h4>Quality</h4>
+                    <p>
+                        Our watches blend precision, durability, and elegance, crafted with premium materials 
+                        for timeless quality.
+                    </p>
+                </div>
+                <div class="testimonial-box">
+                    <i class="fa fa-globe fa-3x"></i>
+                    <h4>Global Research</h4>
+                    <p>
+                        We leverage global research to bring innovative designs and cutting-edge technology to your wrist.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <h2>Meet Our  Team</h2>
+        <div class="small-container">
+            <div class="row">
+                <div class="testimonial-box">
+                    <img src="images/user-1.png" alt="User Image">
+                    <h4>Sean Parker</h4>
+                    <p>Founder&Ceo</p>
+                </div>
+    
+                <div class="testimonial-box">
+                   
+                    <img src="images/user-2.png" alt="User Image">
+                    <h4>Emma Watson</h4>
+                    <p>Chief Technology Officer</p>
+                </div>
+    
+                <div class="testimonial-box">
+                    
+                    <img src="images/user-3.png" alt="User Image">
+                    <h4>Michael Johnson</h4>
+                    <p>Head of Marketing</p>
+                </div>
+                <div class="testimonial-box">
+                    
+                    <img src="images/user-3.png" alt="User Image">
+                    <h4>Michael Johnson</h4>
+                    <p>Customer Support Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      
+
+
+    <div class="footer">
+        <div class="footer-col-1">
+            <h7>Download Our App</h7>
+            
+            <div class="app-logo">
+                <img src="images/app-store.png" alt="App Store">
+                <img src="images/play-store.png" alt="Google Play">
+            </div>
+            <p>Download our app for exclusive offers and easy shopping</p>
+        </div>
+        <div class="footer-col-2">
+            <img src="images/qu.png" alt="Brand Logo">
+            <p>High-quality products at your fingertips</p>
+        </div>
+        <div class="footer-col-3">
+            <h7>Useful Links</h7>
+            <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Afiiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h7>Follow Us</h7>
+            <ul>
+                <li>FaceBook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+        <hr>
+        <p class="copyright">© 2024 Your Brand. All rights reserved.</p>
+    </div>
+
+    <!----js for toggle menu---->
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight= "0px";
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight== "0px")
+            {
+                MenuItems.style.maxHeight= "200px";
+            } 
+            else
+            {
+                MenuItems.style.maxHeight= "0px";
+            }
+        }
+    </script>
+
+    
+
+
+
+    
+</body>
+</html>
